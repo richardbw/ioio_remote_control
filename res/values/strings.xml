@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IOIO Remote Control</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_remote_control">RemoteControlActivity</string>
+    <string name="dir_backward">Backward</string>
+    <string name="dir_forward">Forward</string>
+    <string name="txt_info">Info:</string>
+    <string name="dir_stop">Stop</string>
+    <string name="mode_localctrl">Local Control</string>
+    <string name="mode_listen_for_remote">Listen for Remote Commands</string>
+    <string name="mode_connect_to_local">Connect to Controller</string>
+
+    <string-array name="application_mode">
+        <item>Local Controller</item>
+        <item>Listen for Remote Commands</item>
+        <item>Connect to Controller</item>
+    </string-array>
+
+    <string name="preference_listenport">Listen Port</string>
+    <string name="preference_ctrlr_hostport">Controller host:port</string>
+    <string name="preferences_title">Settings</string>
+    <string name="txt_left">Left</string>
+    <string name="txt_right">Right</string>
+    <string name="txt_switch">Connect to IOIO</string>
+    <string name="connect_switch_on">IOIO controller Enabled</string>
+    <string name="connect_switch_off">Setup IOIO Controller</string>
+    <string name="mode_listening_start">Start Listening</string>
+    <string name="mode_listening_stop">Close port</string>
+    <string name="mode_connect_start">Connect to Controller</string>
+    <string name="mode_connect_stop">Close connection</string>
+    
+    <string name="title_activity_motor_pinout_test">MotorPinoutTestActivity</string>
+
+</resources>

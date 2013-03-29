@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+  
+    
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="@string/txt_info" />
+
+    <EditText
+        android:id="@+id/ioio_info"
+        android:layout_width="364dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView5"
+        android:layout_marginLeft="10dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:lines="10"
+        android:longClickable="true"
+        android:scrollbars="vertical"
+        android:textSize="10sp"
+        android:focusable="false"
+        android:ellipsize="end"
+        android:typeface="sans" />
+
+    <SeekBar
+        android:id="@+id/seekBar_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:max="1000"
+        android:progress="500" />
+
+
+    <RadioGroup
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioGroupDir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical" >
+
+        <ToggleButton
+            android:id="@+id/connect_toggleBtn"
+            android:textOn="@string/connect_switch_on"
+            android:textOff="@string/connect_switch_off"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/txt_switch"
+            android:textSize="@dimen/padding_small"
+            android:typeface="sans" />
+
+        <RadioButton
+            android:id="@+id/radio_dir_fwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dir_forward" />
+
+        <RadioButton
+            android:id="@+id/radio_dir_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/dir_stop" />
+
+        <RadioButton
+            android:id="@+id/radio_dir_bkwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dir_backward" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar_"
+        android:layout_alignLeft="@+id/seekBar_"
+        android:layout_marginLeft="30dp"
+        android:text="@string/txt_left"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar_"
+        android:layout_alignRight="@+id/seekBar_"
+        android:layout_marginRight="30dp"
+        android:text="@string/txt_right"/>
+
+    <TextView
+        android:id="@+id/static_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ioio_info"
+        android:layout_alignRight="@+id/ioio_info"
+        android:layout_below="@+id/ioio_info"
+        android:background="#999"
+        android:text="@string/hello_world" />
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_settings"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:orderInCategory="100"
+        android:title="@string/menu_settings"/>
+    <item
+        android:id="@+id/menu_connect_toggle"
+        android:icon="@drawable/antenna"
+        android:orderInCategory="200"
+        android:enabled="false"
+        android:checkable="true"
+        android:checked="false"
+        android:title="@string/mode_listening_start"/>
+    <item
+        android:id="@+id/menu_show_pinout"
+        android:icon="@drawable/ic_menu_chat_dashboard"
+        android:orderInCategory="400"
+        android:title="Show pinout"/>
+    <item
+        android:id="@+id/menu_dump_logcat"
+        android:icon="@drawable/ic_media_next"
+        android:orderInCategory="400"
+        android:title="Dump logcat"/>
+    <item
+        android:id="@+id/menu_about"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:orderInCategory="999"
+        android:title="About"/>
+
+</menu>

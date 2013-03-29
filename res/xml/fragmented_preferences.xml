@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:order="10"
+        android:summary="Settings related to how controls are transferred to device."
+        android:title="GUI Mode" >
+        <ListPreference
+            android:defaultValue="@string/mode_localctrl"
+            android:dialogTitle="Controller Mode"
+            android:entries="@array/application_mode"
+            android:entryValues="@array/application_mode"
+            android:icon="@android:drawable/ic_menu_compass"
+            android:key="preference_mode"
+            android:summary="Select how this application will behave"
+            android:title="Application Controller Mode" />
+
+        <EditTextPreference
+            android:defaultValue="8087"
+            android:dialogIcon="@android:drawable/ic_menu_call"
+            android:dialogTitle="Local Listen Port"
+            android:icon="@android:drawable/ic_menu_call"
+            android:inputType="number"
+            android:key="preference_listenport"
+            android:summary="Local port to listen for remote connections on."
+            android:title="Listen Port" />
+        <EditTextPreference
+            android:defaultValue="10.1.1.10:8087"
+            android:dialogIcon="@android:drawable/ic_media_ff"
+            android:dialogTitle="Remote Host:Port"
+            android:icon="@android:drawable/ic_media_ff"
+            android:key="preference_remote_host"
+            android:summary="Remote host:port address to connect to."
+            android:title="Remote Host:Port" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:order="15"
+        android:title="Accelerometer" >
+        <SwitchPreference
+            android:defaultValue="true"
+            android:dialogIcon="@android:drawable/ic_menu_always_landscape_portrait"
+            android:icon="@android:drawable/ic_menu_always_landscape_portrait"
+            android:key="preference_use_accelerometer"
+            android:summary="Switch the controls read when device is tilted"
+            android:title="Use Accelerometer" />
+
+        <EditTextPreference
+            android:defaultValue="0.2"
+            android:dialogIcon="@android:drawable/ic_menu_crop"
+            android:dialogMessage="Enter float val between 0-1 (recommend 0.2)"
+            android:dialogTitle="Accelerometer threshold"
+            android:icon="@android:drawable/ic_menu_crop"
+            android:key="preference_accel_threshold"
+            android:summary="Fine tune the response threshhold for the Accelerometer"
+            android:title="Accel. threshhold" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:order="20"
+        android:title="IOIO Servo Settings" >
+        <EditTextPreference
+            android:defaultValue="12"
+            android:dialogMessage="Enter PWM/Servo pin no (Valid PWM pins are 3-7 and 10-14):"
+            android:dialogTitle="PWM pin"
+            android:icon="@drawable/ic_menu_mylocation"
+            android:inputType="number"
+            android:key="preference_ioio_pwmpin"
+            android:summary="Enter PWM/Servo pin no."
+            android:title="PWM pin" />
+        <EditTextPreference
+            android:defaultValue="100"
+            android:dialogMessage="Enter service frequency (in Hz):"
+            android:dialogTitle="PWM Frequency"
+            android:icon="@drawable/ic_menu_goto"
+            android:inputType="number"
+            android:key="preference_ioio_freq"
+            android:summary="Enter service frequency"
+            android:title="PWM Frequency" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:order="30"
+        android:title="IOIO Motor Settings: Motor 1" >
+        <EditTextPreference
+            android:defaultValue="2"
+            android:dialogIcon="@drawable/ic_menu_add"
+            android:dialogMessage="Enter motor input pin no.1 (Pin2/I1):"
+            android:dialogTitle="Digital Pin2 (I1)"
+            android:icon="@drawable/ic_menu_add"
+            android:inputType="number"
+            android:key="preference_ioio_motorpin_i1"
+            android:summary="Motor input pin no.1"
+            android:title="Digital Pin2 (I1)" />
+        <EditTextPreference
+            android:defaultValue="7"
+            android:dialogIcon="@drawable/ic_menu_add"
+            android:dialogMessage="Enter motor input pin no.2 (Pin7/I2):"
+            android:dialogTitle="Digital Pin7 (I2)"
+            android:icon="@drawable/ic_menu_add"
+            android:inputType="number"
+            android:key="preference_ioio_motorpin_i2"
+            android:summary="Motor input pin no.1"
+            android:title="Digital Pin7 (I2)" />
+        <EditTextPreference
+            android:defaultValue="1"
+            android:dialogIcon="@drawable/ic_menu_close_clear_cancel"
+            android:dialogMessage="Enter motor enabler input pin no.2 (Pin1/E1):"
+            android:dialogTitle="Digital Pin1 (E1)"
+            android:icon="@drawable/ic_menu_close_clear_cancel"
+            android:inputType="number"
+            android:key="preference_ioio_motorpin_e1"
+            android:summary="Motor enabler pin no.1"
+            android:title="Digital Pin1 (E1)" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:order="40"
+        android:title="IOIO Motor Settings: Motor 2" >
+        <EditTextPreference
+            android:defaultValue="10"
+            android:dialogIcon="@drawable/ic_menu_add"
+            android:dialogMessage="Enter motor input pin no.1 (Pin10/I3):"
+            android:dialogTitle="Digital Pin10 (I3)"
+            android:icon="@drawable/ic_menu_add"
+            android:inputType="number"
+            android:key="preference_ioio_motorpin_i3"
+            android:summary="Motor input pin no.10"
+            android:title="Digital Pin10 (I3)" />
+        <EditTextPreference
+            android:defaultValue="15"
+            android:dialogIcon="@drawable/ic_menu_add"
+            android:dialogMessage="Enter motor input pin no.2 (Pin15/I4):"
+            android:dialogTitle="Digital Pin15 (I4)"
+            android:icon="@drawable/ic_menu_add"
+            android:inputType="number"
+            android:key="preference_ioio_motorpin_i4"
+            android:summary="Motor input pin no.15"
+            android:title="Digital Pin15 (I4)" />
+        <EditTextPreference
+            android:defaultValue="9"
+            android:dialogIcon="@drawable/ic_menu_close_clear_cancel"
+            android:dialogMessage="Enter motor enabler input pin no.2 (Pin9/E2):"
+            android:dialogTitle="Digital Pin9 (E2)"
+            android:icon="@drawable/ic_menu_close_clear_cancel"
+            android:inputType="number"
+            android:key="preference_ioio_motorpin_e2"
+            android:summary="Motor enabler pin no.9"
+            android:title="Digital Pin9 (E1)" />
+    </PreferenceCategory>
+
+    <EditTextPreference
+        android:defaultValue="3"
+        android:dialogIcon="@drawable/ic_menu_login"
+        android:dialogMessage="Enter IOIO Controller log output level (1-5):"
+        android:dialogTitle="Log level"
+        android:icon="@drawable/ic_menu_login"
+        android:inputType="number"
+        android:key="preference_loglevel"
+        android:order="99"
+        android:summary="Set log output level."
+        android:title="Log level" />
+
+</PreferenceScreen>
